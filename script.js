@@ -6,6 +6,9 @@ app.use(cors({
     origin:["http://localhost:5173/"]
 }))
 app.use(express.json())
+app.get("/",(req,res)=>{
+    res.send("Server Live")
+})
 app.post("/",async(req,res)=>{
     console.log("hit")
     console.log(req.body)
