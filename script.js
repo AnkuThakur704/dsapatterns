@@ -3,7 +3,7 @@ import cors from "cors"
 import pattersnmodel from "./model.js"
 const app = express()
 app.use(cors({
-    origin:["http://localhost:5173/"]
+    origin:["http://localhost:5173","https://dsapatternsfrontend.vercel.app"]
 }))
 app.use(express.json())
 app.get("/",(req,res)=>{
